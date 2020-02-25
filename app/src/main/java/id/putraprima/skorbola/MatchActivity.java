@@ -72,6 +72,21 @@ public class MatchActivity extends AppCompatActivity {
         awayScore.setText(String.valueOf(scoreAway));
     }
 
+    public void handleReduceHome(View view) {
+        if (scoreHome != 0){
+        scoreHome -= 1;
+        homeScore.setText(String.valueOf(scoreHome));
+        }
+
+    }
+
+    public void handleReduceAway(View view) {
+        if (scoreAway != 0){
+            scoreAway -= 1;
+            awayScore.setText(String.valueOf(scoreAway));
+        }
+    }
+
 
     //3.Tombol Cek Result menghitung pemenang dari kedua tim dan mengirim nama pemenang ke ResultActivity, jika seri di kirim text "Draw"
     public void handleCekHasil(View view) {
@@ -82,4 +97,7 @@ public class MatchActivity extends AppCompatActivity {
         intent.putExtra("awayName", awayTeam);
         startActivity(intent);
     }
+
+
+
 }

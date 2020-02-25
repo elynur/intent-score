@@ -47,15 +47,27 @@
 
 
     <Button
+        android:id="@+id/btn_reduce_home"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="44dp"
+        android:onClick="handleReduceHome"
+        android:text="Reduce Home Score"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/btn_add_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="44dp"
         android:onClick="handleAddHomeScore"
         android:text="Add Home Score"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -93,13 +105,25 @@
 
     <Button
         android:id="@+id/btn_add_away"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="52dp"
         android:onClick="handleAddAwayScore"
         android:text="Add Away Score"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <Button
+        android:id="@+id/btn_reduce_away"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="52dp"
+        android:text="Reduce Away Score"
+        android:onClick="handleReduceAway"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
